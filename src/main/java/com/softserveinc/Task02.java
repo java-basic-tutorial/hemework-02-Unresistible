@@ -33,6 +33,27 @@ public class Task02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
+        double t1, t2, dt;
+        System.out.print("t1 >>> ");
+        t1 = scanner.nextDouble();
+        System.out.print("t2 >>> ");
+        t2 = scanner.nextDouble();
+        System.out.print("dt >>> ");
+        dt = scanner.nextDouble();
+
+        System.out.println("-----------------");
+        System.out.println("C       F");
+        System.out.println("-----------------");
+        double celsius, fahrenheit;
+
+        while (t1 <= t2) {
+                celsius = t1;
+                fahrenheit = celsius * 9 / 5 + 32;
+                System.out.printf("%.2f    ", celsius);
+                System.out.printf("%.2f\n", fahrenheit);
+                t1 += dt;
+        }
+        System.out.println("-----------------");
 
     }
 }
